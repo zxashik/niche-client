@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Leckerli+One&display=swap");
 .App {
   text-align: center;
 }
@@ -26,6 +28,18 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.my-font {
+  font-family: "Arizonia", cursive;
+  font-weight: 700;
+}
+.my-font2 {
+  font-family: "Leckerli One", cursive;
+  font-weight: 700;
+}
+.td {
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {

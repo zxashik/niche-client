@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Navbar } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
@@ -9,13 +9,17 @@ const Navigation = () => {
         <>
             <Navbar bg="dark" variant="dark" sticky="top" collapseOnSelect expand="lg" >
                 <Container>
-                    <Navbar.Brand href="#home"> <span className='green-color'>Sunrayes</span></Navbar.Brand>
+                    <Navbar.Brand href="/"> <span className='green-color'>Sunrayes</span></Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
-                        <Nav.Link to="/home"><span className="text-white">Home</span></Nav.Link>
+                        <span className="mx-2">
+                            <Link style={{ textDecoration: 'none', color: 'white' }} to="/">Home</Link>
+                        </span>
 
-                        <Nav.Link to="/products"><span className="text-white">Products</span></Nav.Link>
 
+                        <span className="mx-2">
+                            <Link style={{ textDecoration: 'none', color: 'white' }} to="/explore">Explore</Link>
+                        </span>
 
                         {
                             user?.email ?
@@ -30,10 +34,6 @@ const Navigation = () => {
                                     </span>
                                 </NavLink>
                         }
-
-
-
-
 
 
                     </Navbar.Collapse>

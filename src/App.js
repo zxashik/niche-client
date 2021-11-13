@@ -12,6 +12,8 @@ import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Register from './Pages/Login/Register/Register';
+import PlaceOrder from './Pages/PlaceOrder/PlaceOrder/PlaceOrder';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -28,9 +30,13 @@ function App() {
             <Route path="/explore">
               <Explore />
             </Route>
+
             <PrivateRoute path="/dashboard">
               <Dashboard />
             </PrivateRoute>
+
+
+
             <Route path="/login">
               <Login />
             </Route>
@@ -39,6 +45,13 @@ function App() {
             </Route>
             <Route exact path="/">
               <Home />
+            </Route>
+            <PrivateRoute path="/placeOrder/:serviceId">
+              <PlaceOrder></PlaceOrder>
+            </PrivateRoute>
+
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
           </Switch>
         </Router>

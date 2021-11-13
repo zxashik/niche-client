@@ -1,0 +1,9 @@
+.booking-banner {
+  /* background-color: #264653; */
+  background-image: url(https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2914671/settings_images/5ExEQNV6R0y018xcmJlk_Cover-SBR.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}

@@ -1,11 +1,14 @@
 import React from 'react';
-import Products from '../Products/Products';
+import Footer from '../../Shared/Footer/Footer';
+import Navigation from '../../Shared/Navigation/Navigation';
+import Services from '../Services/Services';
 
 const Explore = () => {
     return (
         <div>
-            <h1>thus us explore</h1>
-            <Products></Products>
+            <Navigation></Navigation>
+            <Services />
+            <Footer></Footer>
 
         </div>
     );
